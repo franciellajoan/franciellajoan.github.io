@@ -1,5 +1,0 @@
-orange - #D76300
-yellow orange - #F69C2E
-peach - #E3D2C2
-sea green - #027676
-navy blue - #003E57
