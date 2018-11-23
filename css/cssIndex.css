@@ -1,0 +1,302 @@
+/*
+I'd like to thank Jonyle Suriaga for the color palette of this webpage (actually I made him choose
+one). The color palette can be found inside the folder 'img'*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background-color: #eefdff;
+     z-index: -1;
+}
+@font-face{
+    font-family: helveticaNeue;
+    src: url(../fonts/helvetica-neue-light.ttf);
+}
+@font-face{
+    font-family: ostrichSans;
+    src: url(../fonts/ostrich_sans/ostrich-regular.ttf);
+}
+@font-face{
+    font-family: ostrichSans;
+    font-weight: bold;
+    src: url(../fonts/ostrich_sans/ostrichsans-black.otf);
+}
+@font-face{
+    font-family: lemonMilk;
+    src: url(../fonts/lemon-milk.otf);
+}
+@font-face{
+    font-family: amatic;
+    src: url(../fonts/amatic-bold.ttf);
+}
+#logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    background-color: #37b2ff;
+    z-index: 20;
+}
+#logo img, #logo p, #logo ul{
+    display: inline;
+}
+#logo img{
+    position: relative;
+    height: 75px;
+    width: 75px;
+    margin-left: 25px;
+    margin-bottom: 21px;
+}
+#logo p{
+    position: relative;
+    font-size: 45px;
+    font-family: amatic;
+}
+#logo ul{
+    position: relative;
+    bottom: 5px;
+    left: 50px;
+    margin: auto;
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+#logo ul li{
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+    padding-left: 2px;
+}
+#logo ul li a{
+    text-decoration: none;
+    font-family: ostrichSans;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: color .3s, background-color .3s, border-color .3s;
+}
+#logo ul li a.default{
+    font-weight: bold;
+    border-bottom: 5px solid #4934fd;
+}
+#logo ul li a:hover{
+    background-color: #acf6ff;
+    color: black;
+    border-color: black;
+}
+#banner{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    margin-top: 75px;
+    background-color: #acf6ff;
+}
+#myCarousel .carousel-inner{
+    width: 100%;
+    height: 300px;
+}
+#myCarousel .carousel-indicators{
+    bottom: 0px;
+}
+#myCarousel .myCaption{
+    position: relative;
+    bottom: 150px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+#myCarousel .myCaption h3, #myCarousel .myCaption p{
+    line-height: 75%;
+}
+#myCarousel .myCaption h3{
+    font-family: ostrichSans;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+#myCarousel .myCaption p{
+    font-family: ostrichSans;
+    font-size: 30px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+#content{
+    position: relative;
+    top: 25px;
+    background-color: #acf6ff;
+    height: 800px;
+    width: 1150px;
+    margin: auto;
+    border-radius: 15px;
+}
+#topics{
+    position: relative;
+    height: 275px;
+    width: 100%;
+}
+#topics ul{
+    position: relative;
+    height: 275px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+#topics ul li{
+    position: relative;
+    top: 12.5px;
+    height: 250px;
+    width: 250px;
+    list-style-type: none;
+    display: inline-block;
+}
+#topics ul li a{
+    position: relative;
+    top: 12.5px;
+    display: inline-block;
+    width: 225px;
+    padding: 87.5px 0;
+    font-family: lemonMilk;
+    text-decoration: none;
+    color: white;
+    background: #33ECFF url('../img/backgroundSquare.png');
+    border-radius: 25px;
+    transition: color .3s, background-color .3s, transform .3s;
+}
+#topics ul li a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:  #37b2ff;
+    background-color: white;
+    transform: scale(1.1, 1.1);
+}
+#webInfo{
+    position: relative;
+}
+#webInfo table{
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+}
+#webInfo table tr td{
+    width: 525px;
+    height: 240px;
+    border: 5px solid #eefdff;
+}
+#webInfo table tr td h1{
+    font-family: ostrichSans;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: left;
+    color: #4934fd;
+}
+#webInfo table tr td p{
+    font-family: helveticaNeue;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 1.5;
+}
+#sideNB{
+    position: fixed;
+    top: 75px;
+    height: 100%;
+    width: 225px;
+    background-color: rgba(55, 178, 255, .6);
+    z-index: 20;
+}
+#sideNB ul{
+    position: relative;
+    width: 225px;
+    height: 100%;
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    font-family: ostrichSans;
+}
+#sideNB ul li{
+    list-style-type: none;
+    display: block;
+}
+#sideNB ul li a{
+    position: relative;
+    display: inline-block;
+    width: 225px;
+    padding: 10px 20px;
+    line-height: 140%;
+    text-decoration: none;
+    color: white;
+    transition: background-color .3s;
+}
+#sideNB ul li .defaultG{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#sideNB ul li a:hover{
+    background-color: rgba(55, 178, 255, .3);
+}
+#lessonArea{
+    position: absolute;
+    left: 230px;
+    top: 75px;
+    margin: 50px;
+    width: 75%;
+    border-radius: 25px;
+    background-color: rgba(54,234,255, .2);
+    border: 3px solid #37b2ff;
+}
+#lessonArea .space{
+    margin: 15px;
+    margin-left: 25px;
+}
+#lessonArea .space h1{
+    font-family: ostrichSans;
+    font-weight: bold;
+    color: #4934fd;
+}
+#lessonArea .space p{
+    font-family: helveticaNeue;
+    color: black;
+    font-size: 18px;
+    text-indent: 25px;
+}
+#error{
+    position: relative;
+    top: 55px;
+    text-align: center;
+    padding: 15px;
+}
+#error h1{
+    font-family: ostrichSans;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #4934fd;
+}
+#error p{
+    font-family: helveticaNeue;
+    font-size: 22.5px;
+    letter-spacing: 2.5px;
+}
+#errorIMG{
+    position: relative;
+    top: 60px;
+    margin: auto;
+    height: 444px;
+    width: 669px;
+}
+#errorIMG img{
+    position: relative;
+    height: 444px;
+    width: 669px;
+}
